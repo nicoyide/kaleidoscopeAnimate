@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 import wasmPack from "vite-plugin-wasm-pack";
 var vite_config_default = defineConfig({
-  plugins: [wasmPack("./path-to-your-rust-crate")],
+  plugins: [wasmPack("./pkg/")],
   optimizeDeps: {
     exclude: ["lucide-react"]
   }
