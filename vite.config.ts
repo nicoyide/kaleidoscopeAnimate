@@ -3,7 +3,7 @@ import wasmPack from 'vite-plugin-wasm-pack';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [wasmPack('./path-to-your-rust-crate')],
+  plugins: [wasmPack('./src')],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
